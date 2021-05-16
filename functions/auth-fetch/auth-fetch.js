@@ -5,7 +5,7 @@ const handler = async (event, context, callback) => {
     let url = new URL('http://www.covidreliefresources.space/twitter');
     const { city, resources } = event.queryStringParameters;
     if (city) {
-      url.searchParams.set('location', city);
+      url.searchParams.set('city', city);
     }
     if (resources) {
       url.searchParams.set('resources', resources);
