@@ -4,7 +4,7 @@ import Dropdown from '../dropdown/dropdown';
 import Results from '../Results';
 
 const MainContainer = () => {
-	const [buildUrl, setBuildUrl] = useState('http://www.covidreliefresources.space/twitter?');
+	const [buildUrl, setBuildUrl] = useState('https://bustling-bay-313108.el.r.appspot.com?');
 	const [resources, setResources] = useState([]);
 
 	const handleChange = (param) => {
