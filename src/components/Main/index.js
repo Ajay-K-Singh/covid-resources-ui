@@ -25,7 +25,14 @@ const MainContainer = () => {
 
 	useEffect(() => {
 		if (buildUrl.split('?').length > 1) {
-			fetch(buildUrl).then(res => res.json()).then(res => setResources(res));
+
+			fetch(buildUrl, {
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json',
+					'Access-Control-Allow-Origin': "*"
+				}
+			}).then(res => res.json()).then(res => setResources(res));
 		}
 	}, [buildUrl])
 
