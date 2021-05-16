@@ -1,19 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import Dropdown from '../dropdown/dropdown';
-import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
 import Results from '../Results';
 
-const useStyles = makeStyles((theme) => ({
-	btn: {
-		width: 300,
-		height: 55
-	}
-}));
-
 const MainContainer = () => {
-	const classes = useStyles();
 	const [buildUrl, setBuildUrl] = useState('http://www.covidreliefresources.space/twitter?');
 	const [resources, setResources] = useState([]);
 
