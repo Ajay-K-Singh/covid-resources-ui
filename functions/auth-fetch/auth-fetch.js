@@ -8,7 +8,7 @@ const handler = async (event, context, callback) => {
       url.searchParams.set('city', city);
     }
     if (resources) {
-      url.searchParams.set('resources', resources);
+      url.searchParams.set('resource', resources);
     }
     const response = await fetch(url.href)
     .then(res => res.json())
